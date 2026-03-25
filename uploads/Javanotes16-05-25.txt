@@ -1,0 +1,18 @@
+Jconnector ---MySQL
+
+classpatch
+
+javac-cp
+
+C:\Users\chamo\OneDrive\Desktop\MySQL\mysql-connector-j-9.3.0\mysql-connector-j-9.3.0.jar demo1.java
+
+insert into ftemp values('rahul',20)
+
+
+class demo1{
+psvm(String args[]) throws classnotfoundexception,AQLException
+{
+Class.forname("com.mysql.cj.jdbc.driver");
+Connection  com=DriverManager.getConnection("jdbc:mysql://localhost:3306","root","");
+Statement stat=com.createStatement();
+stat.executeUpdate("(insert into ftemp values('rahul',20);");

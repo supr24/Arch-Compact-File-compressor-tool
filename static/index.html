@@ -1,0 +1,274 @@
+<!DOCTYPE html> <!-- Declares the document type and HTML version -->
+<html lang="en"> <!-- Root HTML element with English language attribute -->
+<head> <!-- Contains meta information, links to stylesheets, scripts, etc. -->
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document (Unicode) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the webpage responsive -->
+    <title>ArchCompact: Preservation Through Compression</title> <!-- Sets the title that appears in browser tabs -->
+   <link rel="stylesheet" href="/static/styles.css"> <!-- Links to external CSS stylesheet -->
+<script src="/static/script.js" defer></script> <!-- Links to external JavaScript file with defer attribute to load after HTML parsing -->
+</head>
+<body> <!-- Contains all the visible content of the webpage -->
+    <!-- Navigation bar -->
+    <nav> <!-- Navigation section of the page -->
+        <div class="nav-container"> <!-- Container for navigation elements -->
+            <div class="logo"> <!-- Website logo container -->
+                <span class="logo-icon">📦</span> <!-- Package emoji as logo icon -->
+                <span>ArchCompact</span> <!-- Company/product name -->
+            </div>
+            <div class="nav-links"> <!-- Container for navigation links -->
+                <!-- Links to different sections of the page (anchor links) -->
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#demo">Demo</a>
+                <a href="#about">About</a>
+                <a href="#visualization">Visualization</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section - main banner at the top of the page -->
+    <section class="hero"> <!-- Hero/banner section -->
+        <div class="hero-content"> <!-- Container for hero content -->
+            <h1>ArchCompact: Preservation Through Compression</h1> <!-- Main headline -->
+            <p>A smarter way to compress your files using Huffman Coding algorithm. Save space, share faster, preserve your data.</p> <!-- Subheading text -->
+            <div> <!-- Container for call-to-action buttons -->
+                <a href="#demo" class="btn">Try It Now</a> <!-- Primary CTA button -->
+                <a href="#how-it-works" class="btn btn-secondary">Learn More</a> <!-- Secondary CTA button -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features section -->
+    <section id="features" class="features-section"> <!-- Section with ID for navigation target -->
+        <div class="container"> <!-- Container to control width and layout -->
+            <div class="section-title"> <!-- Section title container -->
+                <h2>Why Choose ArchCompact?</h2> <!-- Section heading -->
+                <p>Our file compressor offers powerful features to help you manage your data efficiently</p> <!-- Section subheading -->
+            </div>
+            <div class="features"> <!-- Container for feature cards -->
+                <!-- Feature card 1 -->
+                <div class="feature-card"> <!-- Individual feature card -->
+                    <div class="feature-icon">💾</div> <!-- Floppy disk emoji as feature icon -->
+                    <h3>Space Saving</h3> <!-- Feature title -->
+                    <p>Reduce your file sizes significantly without losing any data using lossless compression techniques.</p> <!-- Feature description -->
+                </div>
+                <!-- Feature card 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div> <!-- Lightning emoji as feature icon -->
+                    <h3>Lightning Fast</h3> <!-- Feature title -->
+                    <p>Our optimized algorithm processes your files quickly, saving you time and computational resources.</p> <!-- Feature description -->
+                </div>
+                <!-- Feature card 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div> <!-- Lock emoji as feature icon -->
+                    <h3>Data Integrity</h3> <!-- Feature title -->
+                    <p>Lossless compression ensures every bit of your original data is preserved and recoverable.</p> <!-- Feature description -->
+                </div>
+                <!-- Feature card 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🧩</div> <!-- Puzzle piece emoji as feature icon -->
+                    <h3>Smart Algorithm</h3> <!-- Feature title -->
+                    <p>Huffman Coding adapts to your file's content, offering optimal compression rates for different data types.</p> <!-- Feature description -->
+                </div>
+                <!-- Feature card 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div> <!-- Computer emoji as feature icon -->
+                    <h3>User-Friendly</h3> <!-- Feature title -->
+                    <p>Simple interface makes compressing and decompressing files easy for everyone.</p> <!-- Feature description -->
+                </div>
+                <!-- Feature card 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div> <!-- Cycling emoji as feature icon -->
+                    <h3>Versatile</h3> <!-- Feature title -->
+                    <p>Works with various file types from text documents to images and more.</p> <!-- Feature description -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works section - explaining the Huffman coding algorithm -->
+    <section id="how-it-works" class="how-it-works"> <!-- Section with ID for navigation target -->
+        <div class="container"> <!-- Container to control width and layout -->
+            <div class="section-title"> <!-- Section title container -->
+                <h2>How Huffman Coding Works</h2> <!-- Section heading -->
+                <p>A step-by-step look at our compression algorithm</p> <!-- Section subheading -->
+            </div>
+            <div class="steps"> <!-- Container for step cards -->
+                <!-- Step 1 -->
+                <div class="step"> <!-- Individual step card -->
+                    <div class="step-number">1</div> <!-- Step number -->
+                    <h3>Character Frequency</h3> <!-- Step title -->
+                    <p>We analyze how often each character appears in your file to determine usage patterns.</p> <!-- Step description -->
+                </div>
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-number">2</div> <!-- Step number -->
+                    <h3>Build Huffman Tree</h3> <!-- Step title -->
+                    <p>A binary tree is created using a priority queue based on character frequencies.</p> <!-- Step description -->
+                </div>
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-number">3</div> <!-- Step number -->
+                    <h3>Generate Codes</h3> <!-- Step title -->
+                    <p>Unique binary codes are assigned to each character, with shorter codes for common characters.</p> <!-- Step description -->
+                </div>
+                <!-- Step 4 -->
+                <div class="step">
+                    <div class="step-number">4</div> <!-- Step number -->
+                    <h3>Compress File</h3> <!-- Step title -->
+                    <p>The original content is encoded using these binary codes, significantly reducing file size.</p> <!-- Step description -->
+                </div>
+                <!-- Step 5 -->
+                <div class="step">
+                    <div class="step-number">5</div> <!-- Step number -->
+                    <h3>Add Padding</h3> <!-- Step title -->
+                    <p>Padding is added to ensure the compressed data fits neatly into bytes.</p> <!-- Step description -->
+                </div>
+                <!-- Step 6 -->
+                <div class="step">
+                    <div class="step-number">6</div> <!-- Step number -->
+                    <h3>Save Binary File</h3> <!-- Step title -->
+                    <p>The compressed data is saved in binary format, ready for storage or sharing.</p> <!-- Step description -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo section - interactive tool to compress/decompress files -->
+    <section id="demo" class="demo"> <!-- Section with ID for navigation target -->
+        <div class="container demo-container"> <!-- Container with additional demo-specific class -->
+            <div class="section-title"> <!-- Section title container -->
+                <h2>Try ArchCompact</h2> <!-- Section heading -->
+                <p>Upload a file to see how much space you could save</p> <!-- Section subheading -->
+            </div>
+            <div class="compression-demo"> <!-- Container for the demo interface -->
+                <div class="tabs"> <!-- Tab navigation for compress/decompress options -->
+                    <div class="tab active" data-tab="compress">Compress</div> <!-- Compress tab (active by default) -->
+                    <div class="tab" data-tab="decompress">Decompress</div> <!-- Decompress tab -->
+                </div>
+               
+                <!-- Compress Content Tab Panel -->
+                <div class="tab-content active" id="compress-content"> <!-- Active tab panel for compression -->
+                    <label for="file-upload" class="file-input-label">Choose a file to compress</label> <!-- Label for file input -->
+                    <input type="file" id="file-upload" class="file-input"> <!-- File input field -->
+                    <div id="file-name" class="file-name">No file selected</div> <!-- Shows selected filename -->
+                   
+                    <div class="action-buttons"> <!-- Container for action buttons -->
+                        <button id="compress-btn" class="btn" disabled>Compress File</button> <!-- Compress button (disabled by default) -->
+                        <a id="download-compressed" class="btn btn-secondary download-btn" style="display: none;">Download Compressed File</a> <!-- Hidden download button -->
+                    </div>
+                   
+                    <div id="compress-spinner" class="spinner"></div> <!-- Loading spinner (for compression in progress) -->
+                    <div id="compress-status" class="status-message"></div> <!-- Status/error messages container -->
+                   
+                    <div class="compression-stats"> <!-- Container for compression statistics -->
+                        <div class="stat-card"> <!-- Stat card for original size -->
+                            <h4>Original Size</h4>
+                            <div id="original-size" class="stat-value">0 KB</div> <!-- Original file size display -->
+                        </div>
+                        <div class="stat-card"> <!-- Stat card for compressed size -->
+                            <h4>Compressed Size</h4>
+                            <div id="compressed-size" class="stat-value">0 KB</div> <!-- Compressed file size display -->
+                        </div>
+                        <div class="stat-card"> <!-- Stat card for compression ratio -->
+                            <h4>Compression Ratio</h4>
+                            <div id="compression-ratio" class="stat-value">0%</div> <!-- Compression ratio display -->
+                        </div>
+                    </div>
+                </div>
+               
+                <!-- Decompress Content Tab Panel -->
+                <div class="tab-content" id="decompress-content"> <!-- Tab panel for decompression (initially hidden) -->
+                    <label for="compressed-file-upload" class="file-input-label">Choose a compressed file (.bin)</label> <!-- Label for compressed file input -->
+                    <input type="file" id="compressed-file-upload" class="file-input" accept=".bin"> <!-- File input restricted to .bin files -->
+                    <div id="compressed-file-name" class="file-name">No file selected</div> <!-- Shows selected filename -->
+                   
+                    <div class="action-buttons"> <!-- Container for action buttons -->
+                        <button id="decompress-btn" class="btn" disabled>Decompress File</button> <!-- Decompress button (disabled by default) -->
+                        <a id="download-decompressed" class="btn btn-secondary download-btn" style="display: none;">Download Decompressed File</a> <!-- Hidden download button -->
+                    </div>
+                   
+                    <div id="decompress-spinner" class="spinner"></div> <!-- Loading spinner (for decompression in progress) -->
+                    <div id="decompress-status" class="status-message"></div> <!-- Status/error messages container -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section - project information -->
+    <section id="about" class="about-section"> <!-- Section with ID for navigation target -->
+        <div class="container"> <!-- Container to control width and layout -->
+            <div class="section-title"> <!-- Section title container -->
+                <h2>About The Project</h2> <!-- Section heading -->
+                <p>Learn more about the motivation and goals behind ArchCompact</p> <!-- Section subheading -->
+            </div>
+            <div class="about"> <!-- Container for about content -->
+                <div class="about-img"> <!-- Container for about image -->
+                    <img src="/static/image.jpg" alt="Data Compression Chart" width="600" height="400"> <!-- Image with dimensions -->
+                </div>
+                <div class="about-content"> <!-- Container for about text content -->
+                    <h3>Preserving Digital Information</h3> <!-- Subsection heading -->
+                    <p>ArchCompact was created to address the growing need for efficient data storage and transmission while ensuring data integrity. In a world where digital information is constantly expanding, compression techniques like Huffman coding offer an elegant solution.</p> <!-- About paragraph -->
+                   
+                    <div class="goal-list"> <!-- Container for goals list -->
+                        <ul>
+                            <li><span class="goal-icon">✅</span> Develop an accessible compression tool for everyone</li> <!-- Goal with checkmark icon -->
+                            <li><span class="goal-icon">✅</span> Implement lossless compression to maintain data integrity</li> <!-- Goal with checkmark icon -->
+                            <li><span class="goal-icon">✅</span> Create an educational platform to understand compression algorithms</li> <!-- Goal with checkmark icon -->
+                            <li><span class="goal-icon">✅</span> Optimize for various file types and use cases</li> <!-- Goal with checkmark icon -->
+                            <li><span class="goal-icon">✅</span> Build a foundation for future compression enhancements</li> <!-- Goal with checkmark icon -->
+                        </ul>
+                    </div>
+                   
+                    <p>We believe that data preservation is crucial, and efficient compression is a key part of ensuring our digital legacy remains intact and accessible for future generations.</p> <!-- Closing paragraph -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualization section - interactive Huffman tree demonstration -->
+    <section id="visualization" class="visualization"> <!-- Section with ID for navigation target -->
+        <div class="container"> <!-- Container to control width and layout -->
+            <div class="section-title"> <!-- Section title container -->
+                <h2>Huffman Tree Visualization</h2> <!-- Section heading -->
+                <p>See how the Huffman algorithm creates optimal binary codes</p> <!-- Section subheading -->
+            </div>
+            <div class="visualization-container"> <!-- Container for visualization components -->
+                <textarea class="sample-text" id="sample-text" placeholder="Type or paste text to visualize Huffman encoding..." rows="4">Type some text here to see a Huffman tree visualization!</textarea> <!-- Text input with default content -->
+                <button id="visualize-btn" class="btn">Generate Huffman Tree</button> <!-- Button to trigger visualization -->
+                <div class="tree-container" id="tree-container"> <!-- Container for Huffman tree display -->
+                    <!-- Huffman tree will be rendered here -->
+                    <div id="tree-placeholder">Enter text above and click Generate to see the Huffman tree</div> <!-- Placeholder message -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-action section -->
+    <section class="cta"> <!-- Call to action section -->
+        <div class="container"> <!-- Container to control width and layout -->
+            <h2>Start Compressing Your Files Today</h2> <!-- CTA heading -->
+            <p>Join thousands of users who are saving space and preserving their data.</p> <!-- CTA subheading -->
+            <a href="#demo" class="btn">Try ArchCompact Now</a> <!-- CTA button -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer> <!-- Page footer -->
+        <div class="container"> <!-- Container to control width and layout -->
+            <div class="logo"> <!-- Logo in footer -->
+                <span class="logo-icon">📦</span> <!-- Package emoji as logo icon -->
+                <span>ArchCompact</span> <!-- Company/product name -->
+            </div>
+            <div class="footer-links"> <!-- Footer navigation links -->
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#demo">Demo</a>
+                <a href="#about">About</a>
+                <a href="#visualization">Visualization</a>
+            </div>
+            <p>&copy; 2025 ArchCompact. All rights reserved.</p> <!-- Copyright notice -->
+        </div>
+    </footer>
+</body>
+</html>
